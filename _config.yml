@@ -158,13 +158,13 @@ newsletter:
 collections:
   books:
     output: true
-  news:
+  news: false
     defaults:
       layout: post
     output: true
-  projects:
+  projects: 
     output: true
-  teachings:
+  teachings: false
     output: true
 
 # -----------------------------------------------------------------------------
