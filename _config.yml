@@ -7,20 +7,20 @@ first_name: Fawad
 middle_name: Farooq
 last_name: Ashraf
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  You can contact me on Gmail or LinkedIn.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   My academic portfolio.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+  Content by <a href="https://fawadkhanf3.github.io" target="_blank">Fawad Khan</a>.
+keywords: Aerospace Engineer, Research Associate, Flight Dynamics and Control, Machine Learning # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: yapper.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://fawadkhanf3.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
 
@@ -39,9 +39,10 @@ repo_trophies:
 # External service URLs for repository page
 # To use a different instance or service for displaying GitHub stats and trophies,
 # update these URLs. These are used in the repository templates.
-external_services:
-  github_readme_stats_url: https://github-readme-stats.vercel.app
-  github_profile_trophy_url: https://github-profile-trophy.vercel.app
+# idek why
+#external_services:
+#  github_readme_stats_url: https://github-readme-stats.vercel.app
+#  github_profile_trophy_url: https://github-profile-trophy.vercel.app
 
 # -----------------------------------------------------------------------------
 # RSS Feed
@@ -58,6 +59,7 @@ footer_fixed: true
 search_enabled: true
 socials_in_search: true
 posts_in_search: true
+publications_in_search: true
 bib_search: true
 
 # Dimensions
@@ -93,18 +95,18 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
-permalink: /blog/:year/:title/
-lsi: false # produce an index for related posts
+#blog_name: Nothing here yet # blog_name will be displayed in your blog page
+#blog_description: idk what i'll put there
+#permalink: /blog/:year/:title/
+#lsi: false # produce an index for related posts
 
 # Pagination
-pagination:
-  enabled: true
+#pagination:
+#  enabled: true
 
-related_blog_posts:
-  enabled: true
-  max_related: 5
+#related_blog_posts:
+#  enabled: true
+#  max_related: 3
 
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
@@ -123,24 +125,24 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: abcde # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+#external_sources:
+#  - name: medium.com
+#    rss_url: https://medium.com/@al-folio/feed
+#    categories: [external-posts]
+#    tags: [medium]
+#  - name: Google Blog
+#    posts:
+#      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+#        published_date: 2024-05-14
+#    categories: [external-posts]
+#    tags: [google]
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -164,8 +166,8 @@ collections:
     output: true
   projects: 
     output: true
-  teachings: 
-    output: true
+  #teachings: 
+  #  output: true
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -206,6 +208,10 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - _pages/dropdown.md
+  - _pages/repositories.md
+  - _pages/profiles.md
+  - _pages/projects.md
 keep_files:
   - CNAME
   - .nojekyll
@@ -273,7 +279,7 @@ jekyll-archives:
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
+display_tags: ["Aerospace", "Flight Dynamics", "Guidance and Control", "Machine Learning", "State Estimation"] # these tags will be displayed on the front page of your blog
 display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
