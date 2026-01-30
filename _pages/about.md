@@ -30,7 +30,7 @@ latest_posts:
 -->
 
 <div style="text-align: justify;">
-I am an Aerospace Engineer and researcher with a strong interest in Flight Dynamics, Flight Vehicle Guidance Nagivation and Control, Nonlinear State Estimation and Filtering, Robust; Optimal; Linear; Nonlinear; Intelligent and Adaptive Control, Optimization, and Machine Learning, particularly as applied to Autonomous and Aerospace systems. My work sits at the intersection of theory and implementation, where mathematical modeling meets simulation and real-world constraints.
+I am an aerospace engineer and researcher with a strong interest in flight dynamics, flight vehicle guidance nagivation and control, nonlinear state estimation and filtering, robust; optimal; linear/nonlinear; intelligent and adaptive control, optimization, and machine learning, particularly as applied to autonomous and aerospace systems. My work sits at the intersection of theory and implementation, where mathematical modeling meets simulation and real-world constraints.
 
 </div>
 
