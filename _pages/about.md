@@ -11,7 +11,7 @@ profile:
   more_info: >
     <p>Beihang University</p>
     <p>Beijing, China</p>
-    <p>+92 312 9197452</p>
+    #<p>+92 312 9197452</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
