@@ -30,7 +30,9 @@ latest_posts:
 <!-- I am an Aerospace Engineer with interest in Flight Dynamics, Flight Vehicle Guidance - Navigation & Control, Nonlinear State Estimation & Filtering, Algorithm Design and Machine Learning.
 -->
 
+<div style="text-align: justify;">
 I am an Aerospace Engineer and researcher with a strong interest in Flight Dynamics, Flight Vehicle Guidance Nagivation and Control, Nonlinear State Estimation and Filtering, Robust; Optimal; Linear; Nonlinear; Intelligent and Adaptive Control, Optimization, and Machine Learning, particularly as applied to Autonomous and Aerospace systems. My work sits at the intersection of theory and implementation, where mathematical modeling meets simulation and real-world constraints.
+</div>
 
 I am especially interested in problems involving dynamic systems, trajectory optimization, adaptive control, and learning-based decision making. Much of my recent work focuses on topics such as powered landing of reusable launch vehicles, convex optimization–based trajectory planning, and reinforcement learning approaches inspired by AlphaZero-style self-play algorithms.
 
