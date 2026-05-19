@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Navigation projects mark</title>
+  <desc id="desc">Navigation paths with filtered position estimates.</desc>
+  <rect width="640" height="360" fill="#0b1520"/>
+  <g fill="none" stroke-width="7" stroke-linecap="round">
+    <path d="M76 260c72-96 148-122 228-86 80 35 136 19 234-83" stroke="#72dac9"/>
+    <path d="M76 284c84-62 153-80 226-54 75 27 154 7 256-71" stroke="#d6b16f" stroke-dasharray="18 20"/>
+  </g>
+  <g fill="#eef4f8">
+    <circle cx="76" cy="260" r="10"/><circle cx="304" cy="174" r="10"/><circle cx="538" cy="91" r="10"/>
+  </g>
+  <path d="M426 86h64l-24 24 62 62-40 40-62-62-24 24z" fill="#72dac9" fill-opacity=".18" stroke="#72dac9" stroke-width="7" stroke-linejoin="round"/>
+  <text x="48" y="326" fill="#8fa0ae" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">NAVIGATION</text>
+</svg>

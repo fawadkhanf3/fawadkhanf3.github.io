@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Optimization project mark</title>
+  <desc id="desc">Optimal control cost surface and descending search path.</desc>
+  <rect width="640" height="360" fill="#0b1520"/>
+  <g fill="none" stroke="#213245" stroke-width="2">
+    <path d="M88 278c92-70 175-94 248-72s147 4 226-54"/>
+    <path d="M88 234c92-70 175-94 248-72s147 4 226-54"/>
+    <path d="M88 190c92-70 175-94 248-72s147 4 226-54"/>
+    <path d="M88 146c92-70 175-94 248-72s147 4 226-54"/>
+  </g>
+  <path d="M92 246c78-8 110-68 176-54 72 15 74 84 150 68 55-12 88-69 128-132" fill="none" stroke="#d6b16f" stroke-width="9" stroke-linecap="round"/>
+  <path d="M122 84 260 210 394 154 536 278" fill="none" stroke="#72dac9" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="260" cy="210" r="13" fill="#eef4f8"/>
+  <circle cx="394" cy="154" r="13" fill="#eef4f8"/>
+  <text x="48" y="326" fill="#8fa0ae" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">OPTIMAL CONTROL</text>
+</svg>

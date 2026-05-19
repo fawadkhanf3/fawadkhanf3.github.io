@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Control systems project mark</title>
+  <desc id="desc">Closed-loop control block diagram and response curve.</desc>
+  <rect width="640" height="360" fill="#071019"/>
+  <g fill="none" stroke="#8fa0ae" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M82 146h74M254 146h94M446 146h112"/>
+    <path d="M510 146v76H154v-76"/>
+  </g>
+  <rect x="156" y="106" width="98" height="80" rx="8" fill="#132333" stroke="#72dac9" stroke-width="6"/>
+  <rect x="348" y="106" width="98" height="80" rx="8" fill="#132333" stroke="#d6b16f" stroke-width="6"/>
+  <text x="186" y="154" fill="#eef4f8" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">K</text>
+  <text x="376" y="154" fill="#eef4f8" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">G(s)</text>
+  <path d="M96 272c58 0 72-72 116-72 54 0 47 56 92 56 50 0 48-92 94-92 45 0 42 66 86 66 28 0 43-24 60-52" fill="none" stroke="#72dac9" stroke-width="7" stroke-linecap="round"/>
+  <text x="48" y="326" fill="#8fa0ae" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">CONTROL SYSTEMS</text>
+</svg>

@@ -23,6 +23,12 @@ window.portfolioData = {
       "fawad_farooq_ashraf@outlook.com"
     ]
   },
+  highlights: [
+    { value: "8", label: "Publications", note: "IBCAST, IFAC, ICCAR conference papers" },
+    { value: "7", label: "Technical GitHub Repositories", note: "Control, guidance, navigation, estimation, optimization, geometry, numerical methods" },
+    { value: "6DOF", label: "Simulation Focus", note: "High-fidelity nonlinear aerospace vehicle simulations" },
+    { value: "GNC", label: "Research Core", note: "Guidance, navigation, control, state estimation, and fault detection" }
+  ],
   interests: [
     ["Flight Dynamics", "ri-plane-line"],
     ["Flight Vehicle GNC", "ri-rocket-2-line"],
@@ -197,6 +203,18 @@ window.portfolioData = {
   ],
   projects: [
     {
+      title: "Control Systems Projects",
+      category: "Control",
+      image: "assets/img/project/control-systems.svg",
+      tools: ["MATLAB", "Simulink", "H-infinity", "LQR", "PID"],
+      summary: "A repository of robust, nonlinear, invariant-set, and abstraction-oriented control projects.",
+      detail: "Includes inverted pendulum, canard-configured fighter aircraft, quadcopter feedback linearization, LMI-based H-infinity control, PI controller Hanus form, mesh-based affine abstraction, Lipschitz affine abstraction, and invariant sets.",
+      links: [
+        { label: "Repository", url: "https://github.com/fawadkhanf3/Control-Projects" },
+        { label: "Inverted Pendulum", url: "projects/Inverted_Pendulum.html" }
+      ]
+    },
+    {
       title: "Control of an Inverted Pendulum on a Cart",
       category: "Controls",
       image: "assets/img/project/Inverted_Pendulum.png",
@@ -207,6 +225,60 @@ window.portfolioData = {
         { label: "Details", url: "projects/Inverted_Pendulum.html" },
         { label: "GitHub", url: "https://github.com/fawadkhanf3/Control-Projects/tree/main/01%20-%20Robust%20Control%20of%20Inverted%20Pendulum" }
       ]
+    },
+    {
+      title: "Satellite Launch Vehicle Guidance",
+      category: "Guidance",
+      image: "assets/img/project/slv-guidance.svg",
+      tools: ["MATLAB", "Launch Vehicle Guidance", "Orbital Mechanics"],
+      summary: "Guidance algorithms and astrodynamics utilities for satellite launch vehicle studies.",
+      detail: "Includes Iterative Guidance Mode, Kepler Propagator, Lambert Problem, Optimal Guidance, and Powered Explicit Guidance.",
+      links: [{ label: "Repository", url: "https://github.com/fawadkhanf3/SLV-Guidance" }]
+    },
+    {
+      title: "Navigation Projects",
+      category: "Navigation",
+      image: "assets/img/project/navigation.svg",
+      tools: ["EKF", "CKF", "Simulink", "Flight Vehicles"],
+      summary: "Navigation filtering projects for flight vehicles, including linear and nonlinear state-estimate formulations.",
+      detail: "Includes EKF Navigation, CKF Navigation with linear Xhat, CKF Navigation with nonlinear Xhat, and EKF Navigation for a Quadrotor in Simulink.",
+      links: [{ label: "Repository", url: "https://github.com/fawadkhanf3/Navigation-Projects" }]
+    },
+    {
+      title: "State Estimation & Filtering",
+      category: "Estimation",
+      image: "assets/img/project/state-estimation.svg",
+      tools: ["Filtering", "Set-Valued Estimation", "Fault Detection", "Interval Observers"],
+      summary: "A collection of state estimation, filtering, fault detection, and observer projects.",
+      detail: "Includes Filtering & Estimation, Set-Valued State Estimation, Fault Detection, and Interval Observers.",
+      links: [{ label: "Repository", url: "https://github.com/fawadkhanf3/State-Estimation-and-Filtering" }]
+    },
+    {
+      title: "Optimal Control & Optimization",
+      category: "Optimization",
+      image: "assets/img/project/optimization.svg",
+      tools: ["Collocation", "LGL Pseudospectral", "PSO", "Optimal Control"],
+      summary: "Optimization projects focused on optimal-control transcription and weight selection.",
+      detail: "Includes Collocation, Legendre-Gauss-Lobatto Pseudospectral methods, and Optimal Weight Selection with Particle Swarm Optimization.",
+      links: [{ label: "Repository", url: "https://github.com/fawadkhanf3/Optimization" }]
+    },
+    {
+      title: "Computational Geometry Projects",
+      category: "Computational Geometry",
+      image: "assets/img/project/computational-geometry.svg",
+      tools: ["Geometry", "Algorithms", "Optimization"],
+      summary: "Computational geometry projects for geometric enclosure and inscribed-shape problems.",
+      detail: "Includes Maximum Object Enclosing Rectangle and Maximum Inscribed Isothetic Rectangle projects.",
+      links: [{ label: "Repository", url: "https://github.com/fawadkhanf3/Computational-Geometry-Projects" }]
+    },
+    {
+      title: "Numerical Methods",
+      category: "Numerical Integration",
+      image: "assets/img/project/numerical-methods.svg",
+      tools: ["C++", "MATLAB MEX", "RK4", "Dormand-Prince", "Fehlberg"],
+      summary: "Numerical integration implementations and C++/MEX solvers for simulation workflows.",
+      detail: "Includes fixed-step RK4, Heun, ode45-style Fehlberg and Dormand-Prince implementations, and supporting stepper headers.",
+      links: [{ label: "Repository", url: "https://github.com/fawadkhanf3/Numerical-Methods" }]
     }
   ],
   certificates: [

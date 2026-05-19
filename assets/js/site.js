@@ -41,6 +41,19 @@
       .join("");
   }
 
+  function renderHighlights() {
+    $("#highlight-list").innerHTML = data.highlights
+      .map(
+        (item) => `
+          <article class="highlight">
+            <strong>${escapeHtml(item.value)}</strong>
+            <span>${escapeHtml(item.label)}</span>
+            <p>${escapeHtml(item.note)}</p>
+          </article>`
+      )
+      .join("");
+  }
+
   function renderInterests() {
     $("#interests").innerHTML = data.interests
       .map(([label, icon]) => `<article class="interest"><i class="${icon}" aria-hidden="true"></i><span>${escapeHtml(label)}</span></article>`)
@@ -233,6 +246,7 @@
 
   initTheme();
   renderProfile();
+  renderHighlights();
   renderInterests();
   renderEducation();
   renderSkills();

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Computational geometry project mark</title>
+  <desc id="desc">Polygonal shapes and enclosing rectangles on a dark technical grid.</desc>
+  <rect width="640" height="360" fill="#0b1520"/>
+  <g stroke="#213245" stroke-width="1">
+    <path d="M0 60h640M0 120h640M0 180h640M0 240h640M0 300h640M80 0v360M160 0v360M240 0v360M320 0v360M400 0v360M480 0v360M560 0v360"/>
+  </g>
+  <rect x="172" y="92" width="296" height="178" rx="4" fill="none" stroke="#d6b16f" stroke-width="8"/>
+  <path d="M214 238 248 126 330 116 418 174 382 250 288 274Z" fill="#72dac9" fill-opacity=".2" stroke="#72dac9" stroke-width="8" stroke-linejoin="round"/>
+  <circle cx="248" cy="126" r="9" fill="#eef4f8"/>
+  <circle cx="330" cy="116" r="9" fill="#eef4f8"/>
+  <circle cx="418" cy="174" r="9" fill="#eef4f8"/>
+  <circle cx="382" cy="250" r="9" fill="#eef4f8"/>
+  <circle cx="288" cy="274" r="9" fill="#eef4f8"/>
+  <text x="48" y="326" fill="#8fa0ae" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">COMPUTATIONAL GEOMETRY</text>
+</svg>

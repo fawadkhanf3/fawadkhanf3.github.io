@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Numerical methods project mark</title>
+  <desc id="desc">Integration step grid with numerical solver trajectory.</desc>
+  <rect width="640" height="360" fill="#0b1520"/>
+  <g stroke="#213245" stroke-width="1">
+    <path d="M80 70v210M160 70v210M240 70v210M320 70v210M400 70v210M480 70v210M560 70v210M64 260h520M64 212h520M64 164h520M64 116h520"/>
+  </g>
+  <path d="M72 262c54-9 70-47 114-65 45-18 82 13 124-8 58-30 48-96 102-108 46-10 86 33 144 18" fill="none" stroke="#72dac9" stroke-width="8" stroke-linecap="round"/>
+  <path d="M76 262h88v-48h88v-20h88v-76h88v-30h88" fill="none" stroke="#d6b16f" stroke-width="7" stroke-linejoin="round" stroke-dasharray="12 14"/>
+  <text x="84" y="108" fill="#eef4f8" font-family="JetBrains Mono, monospace" font-size="26" font-weight="800">RK4</text>
+  <text x="48" y="326" fill="#8fa0ae" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">NUMERICAL METHODS</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">State estimation and filtering project mark</title>
+  <desc id="desc">Measurement points, estimated state curve, and bounded uncertainty envelopes.</desc>
+  <rect width="640" height="360" fill="#071019"/>
+  <path d="M78 235c78-118 154-142 232-74 72 63 139 61 252-59" fill="none" stroke="#72dac9" stroke-width="8" stroke-linecap="round"/>
+  <path d="M78 262c80-118 153-143 232-77 72 60 139 66 252-58" fill="none" stroke="#72dac9" stroke-opacity=".25" stroke-width="38" stroke-linecap="round"/>
+  <g fill="#d6b16f">
+    <circle cx="108" cy="230" r="8"/><circle cx="178" cy="170" r="8"/><circle cx="246" cy="148" r="8"/><circle cx="324" cy="172" r="8"/><circle cx="402" cy="192" r="8"/><circle cx="482" cy="154" r="8"/><circle cx="550" cy="104" r="8"/>
+  </g>
+  <rect x="78" y="78" width="156" height="64" rx="8" fill="#132333" stroke="#213245"/>
+  <text x="100" y="119" fill="#eef4f8" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">FILTER</text>
+  <text x="48" y="326" fill="#8fa0ae" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">STATE ESTIMATION</text>
+</svg>

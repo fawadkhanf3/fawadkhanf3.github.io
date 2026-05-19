@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Satellite launch vehicle guidance project mark</title>
+  <desc id="desc">A launch vehicle trajectory rising from Earth toward a target orbit.</desc>
+  <rect width="640" height="360" fill="#071019"/>
+  <path d="M0 302c116-44 220-54 332-30 105 23 193 8 308-45v133H0Z" fill="#132333"/>
+  <path d="M114 278C238 160 330 98 525 60" fill="none" stroke="#72dac9" stroke-width="8" stroke-linecap="round" stroke-dasharray="1 20"/>
+  <path d="M271 160 326 78l23 95 72 36-82 18-45 76-18-88-78-45Z" fill="#d6b16f" fill-opacity=".17" stroke="#d6b16f" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M326 78v95l95 36-82 18-45 76-18-88-78-45z" fill="#72dac9" fill-opacity=".12"/>
+  <circle cx="525" cy="60" r="18" fill="none" stroke="#eef4f8" stroke-width="6"/>
+  <circle cx="525" cy="60" r="5" fill="#eef4f8"/>
+  <text x="48" y="326" fill="#8fa0ae" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">SLV GUIDANCE</text>
+</svg>
