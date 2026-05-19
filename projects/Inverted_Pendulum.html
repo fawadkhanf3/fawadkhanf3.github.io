@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Project details for robust, optimal and classical control of an inverted pendulum on a cart.">
+    <title>Control of an Inverted Pendulum on a Cart | Fawad Farooq Ashraf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/vendor/remixicon/remixicon.css">
+    <link rel="stylesheet" href="../assets/css/portfolio.css">
+  </head>
+  <body data-theme="dark">
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Project navigation">
+        <a class="brand" href="../index.html">
+          <span class="brand-mark">FK</span>
+          <span>Fawad Farooq Ashraf</span>
+        </a>
+        <div class="nav-links project-nav">
+          <a href="../index.html#projects">Back to Projects</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+          <i class="ri-sun-line" aria-hidden="true"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero shell section-pad project-detail">
+        <div class="hero-copy">
+          <p class="eyebrow">Controls Project</p>
+          <h1>Robust, Optimal & Classical Control of an Inverted Pendulum on a Cart</h1>
+          <p class="lead">Implemented H-infinity Loop Shaping, H-infinity Mixed Sensitivity, LQR and PID controllers in MATLAB and Simulink.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/fawadkhanf3/Control-Projects/tree/main/01%20-%20Robust%20Control%20of%20Inverted%20Pendulum" target="_blank" rel="noreferrer">
+              <i class="ri-github-fill" aria-hidden="true"></i>
+              Project Link
+            </a>
+            <a class="button ghost" href="../index.html#projects">
+              <i class="ri-arrow-left-line" aria-hidden="true"></i>
+              Portfolio
+            </a>
+          </div>
+        </div>
+        <aside class="profile-card">
+          <img src="../assets/img/project/Inverted_Pendulum.png" alt="Inverted pendulum on a cart diagram">
+          <div>
+            <h2>Tools Used</h2>
+            <p>MATLAB, Simulink</p>
+          </div>
+          <dl class="quick-facts">
+            <div><dt>Domain</dt><dd>Control Systems</dd></div>
+            <div><dt>Methods</dt><dd>H-infinity, LQR, PID</dd></div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section band">
+        <div class="shell project-writeup">
+          <div class="section-heading">
+            <p class="eyebrow">Model Note</p>
+            <h2>Reference</h2>
+          </div>
+          <article class="experience-card">
+            <p>The nonlinear model was taken from <em>Introduction to Feedback Control Using Design Examples</em> by W. Beard and W. McLain.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer shell">
+      <p>&copy; <span id="year"></span> Fawad Farooq Ashraf.</p>
+      <a href="../index.html#top">Back to home</a>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const savedTheme = localStorage.getItem("portfolio-theme") || "dark";
+      document.body.dataset.theme = savedTheme;
+      const toggle = document.querySelector(".theme-toggle");
+      const setToggle = () => {
+        const light = document.body.dataset.theme === "light";
+        toggle.setAttribute("aria-label", light ? "Switch to dark mode" : "Switch to light mode");
+        toggle.setAttribute("aria-pressed", String(light));
+        toggle.innerHTML = `<i class="${light ? "ri-moon-line" : "ri-sun-line"}" aria-hidden="true"></i>`;
+      };
+      toggle.addEventListener("click", () => {
+        const next = document.body.dataset.theme === "dark" ? "light" : "dark";
+        document.body.dataset.theme = next;
+        localStorage.setItem("portfolio-theme", next);
+        setToggle();
+      });
+      setToggle();
+    </script>
+  </body>
+</html>
