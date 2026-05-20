@@ -45,10 +45,28 @@ window.portfolioData = {
       url: "https://is.buaa.edu.cn/en/",
       degree: "Master of Engineering in Aerospace Science and Technology",
       period: "September 2023 - July 2025",
-      metric: "CGPA: 3.86/4.0 (in first two semesters)",
+      metric: "CGPA: 3.87/4.0",
       image: "assets/img/education/BUAA.jpg",
-      logoScale: 1.35,
-      details: [{ label: "Research", items: ["Intelligent Control of Aerospace Vehicles"] }]
+      logoScale: 1.0,
+      details: [
+        { label: "Research", items: ["Intelligent Control of Aerospace Vehicles"] },
+        { label: "Thesis", items: ["Adaptive Control for Powered Landing of Reusable Launch Vehicles"] },
+        { label: "Achievements", items: ["Second Prize for Excellent Study", "Chinese Government Scholarship", "Dean's List of Honors"] },
+        {
+          label: "Projects",
+          items: [
+            "'Trajectory Design for Jupiter Exploration' as part of semester course 'Orbital Dynamics & Control of Deep Space Vehicles'.",
+            "'Neural Network Based Adaptive Control: Leveraging RBF Networks for Uncertain Dynamic System Control' as part of semester course 'Neural Networks'.",
+            "'A GPS/Dead-Reckoning Integration for Optimal State Estimation of a Flight Vehicle' as part of semester course 'Optimal Estimation'.",
+            "'Nonlinear W-2 and W-infinity Control: A Robust Optimal Control in the Weighted Sobolev Space' as part of semester course 'Modern Control Theory'.",
+            "'Detection of Oscillatory Failures in Hydraulic Actuators of Aircraft' as part of semester course 'Fault-Tolerant Flight Control'.",
+            "'Linear Matrix Inequality based Output Feedback H-2/H-infinity Controller Design' as part of semester course 'Robust Control'.",
+            "'Adaptive Neural Network based Sliding Mode Controller for a UAV' as part of semester course 'Intelligent Control'.",
+            "'Set-Valued State Estimation: Based on Indirect Polytopic Set Representations' as part of semester course 'Spacecraft Control'",
+            "'Autonomous Systems Toolbox: A Comprehensive Exploration of Control, Navigation and Perception' as part of semester course 'MATLAB Programming'."
+          ]
+        }
+      ]
     },
     {
       school: "Institute of Space Technology",
