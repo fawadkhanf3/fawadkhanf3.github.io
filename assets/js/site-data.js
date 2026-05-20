@@ -55,6 +55,13 @@ window.portfolioData = {
         {
           label: "Projects",
           items: [
+            "'Dynamic Inversion based Higher-Order Model Reference Adaptive Control with Time-Varying Uncertain Parameters' as part of thesis research",
+            "'PID/H-infinity Control Design for Resuable Launch Vehicles' as part of thesis research",
+            "'6DOF Simulation for Powered Descent and Landing of Reusable Launch Vehicles' as part of thesis research",
+            "'Trajectory Design for Hypersonic Vehicles using GPOPS-II' as part of thesis research",
+            "'Improved Generalized Quasi-Spectral based Model Predictive Static Programming' as part of thesis research", 
+            "'Successive Convex Optimization (Second-Order Cone Programming) based Trajectory Design for Powered Landing of Reusable Launch Vehicles' as part of thesis research.",
+            "'Connect-5 (5 in a row) AI: based on Deep Reinforcement Learning and Monte-Carlo Tree Search' as a side-interest",
             "'Trajectory Design for Jupiter Exploration' as part of semester course 'Orbital Dynamics & Control of Deep Space Vehicles'.",
             "'Neural Network Based Adaptive Control: Leveraging RBF Networks for Uncertain Dynamic System Control' as part of semester course 'Neural Networks'.",
             "'A GPS/Dead-Reckoning Integration for Optimal State Estimation of a Flight Vehicle' as part of semester course 'Optimal Estimation'.",
