@@ -821,6 +821,22 @@ li + li {
   display: block;
 }
 
+.contact-socials .social-row {
+  margin-top: 0.2rem;
+}
+
+.contact-socials .social-row a {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+}
+
+.contact-socials .social-row a:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #071019;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;

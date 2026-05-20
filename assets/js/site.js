@@ -217,10 +217,18 @@
         <span>Location</span>
         <strong>Islamabad, Pakistan</strong>
       </div>
-      <div class="contact-card email-list">
-        <i class="ri-inbox-line" aria-hidden="true"></i>
-        <span>More email</span>
-        ${data.profile.emails.slice(1).map((email) => `<a href="mailto:${email}">${escapeHtml(email)}</a>`).join("")}
+      <div class="contact-card contact-socials">
+        <i class="ri-share-line" aria-hidden="true"></i>
+        <span>Social links</span>
+        <div class="social-row">
+          ${data.profile.socials
+            .filter((social) => !social.url.startsWith("mailto:"))
+            .map(
+              (social) =>
+                `<a href="${social.url}" ${externalAttrs} aria-label="${escapeHtml(social.label)}"><i class="${social.icon}" aria-hidden="true"></i></a>`
+            )
+            .join("")}
+        </div>
       </div>
     `;
   }
