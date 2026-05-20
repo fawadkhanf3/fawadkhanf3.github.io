@@ -47,6 +47,7 @@ window.portfolioData = {
       period: "September 2023 - July 2025",
       metric: "CGPA: 3.86/4.0 (in first two semesters)",
       image: "assets/img/education/BUAA.jpg",
+      logoScale: 1.35,
       details: [{ label: "Research", items: ["Intelligent Control of Aerospace Vehicles"] }]
     },
     {
@@ -56,6 +57,7 @@ window.portfolioData = {
       period: "October 2014 - August 2018",
       metric: "CGPA: 3.63/4.0 (Cum Laude)",
       image: "assets/img/education/IST.jpg",
+      logoScale: 0.9,
       details: [
         { label: "Thesis", items: ["Iterative Guidance Scheme for Satellite Launch Vehicles"] },
         { label: "Achievements", items: ["Gold Medal in Academics", "Merit Scholarship", "Dean's List of Honors"] },
@@ -84,6 +86,7 @@ window.portfolioData = {
       period: "August 2012 - June 2014",
       metric: "Percentage: 89%",
       image: "assets/img/education/pgc.png",
+      logoScale: 0.82,
       details: [{ label: "Achievements", items: ["Merit Scholarship", "Shield of Appreciation for Securing 1st Position"] }]
     },
     {
@@ -93,6 +96,7 @@ window.portfolioData = {
       period: "August 2001 - April 2012",
       metric: "Percentage: 94%",
       image: "assets/img/education/dps.jpg",
+      logoScale: 0.9,
       details: [{ label: "Achievements", items: ["Shield of Appreciation for Securing 1st Position"] }]
     }
   ],
@@ -203,82 +207,250 @@ window.portfolioData = {
   ],
   projects: [
     {
-      title: "Control Systems Projects",
+      title: "Robust Control of Inverted Pendulum",
       category: "Control",
-      image: "assets/img/project/control-systems.svg",
-      tools: ["MATLAB", "Simulink", "H-infinity", "LQR", "PID"],
-      summary: "A repository of robust, nonlinear, invariant-set, and abstraction-oriented control projects.",
-      detail: "Includes inverted pendulum, canard-configured fighter aircraft, quadcopter feedback linearization, LMI-based H-infinity control, PI controller Hanus form, mesh-based affine abstraction, Lipschitz affine abstraction, and invariant sets.",
-      links: [
-        { label: "Repository", url: "https://github.com/fawadkhanf3/Control-Projects" },
-        { label: "Inverted Pendulum", url: "projects/Inverted_Pendulum.html" }
-      ]
-    },
-    {
-      title: "Control of an Inverted Pendulum on a Cart",
-      category: "Controls",
       image: "assets/img/project/Inverted_Pendulum.png",
-      tools: ["MATLAB", "Simulink"],
-      summary: "Implemented H-infinity Loop Shaping, H-infinity Mixed Sensitivity, LQR and PID controllers.",
-      detail: "Nonlinear model taken from Introduction to Feedback Control Using Design Examples by W. Beard and W. McLain.",
+      tools: ["MATLAB", "Simulink", "H-infinity", "LQR", "PID"],
+      summary: "Classical, optimal, and robust controller designs for an inverted pendulum on a cart.",
+      detail: "Implemented H-infinity loop shaping, H-infinity mixed sensitivity, LQR, and PID controllers.",
       links: [
         { label: "Details", url: "projects/Inverted_Pendulum.html" },
-        { label: "GitHub", url: "https://github.com/fawadkhanf3/Control-Projects/tree/main/01%20-%20Robust%20Control%20of%20Inverted%20Pendulum" }
+        { label: "Code", url: "https://github.com/fawadkhanf3/Control-Projects/tree/main/01%20-%20Robust%20Control%20of%20Inverted%20Pendulum" }
       ]
     },
     {
-      title: "Satellite Launch Vehicle Guidance",
+      title: "Robust Control of Canard Configured Fighter Aircraft",
+      category: "Control",
+      image: "assets/img/project/control-systems.svg",
+      tools: ["Robust Control", "Aircraft Dynamics", "MATLAB"],
+      summary: "Control design study for a canard-configured fighter aircraft model.",
+      detail: "Part of the control systems project set focused on robust flight-control synthesis.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/Control-Projects/tree/main/02%20-%20Robust%20Control%20of%20Canard%20Configured%20Fighter%20Aircraft" }]
+    },
+    {
+      title: "Feedback Linearization Control of a Quadcopter",
+      category: "Control",
+      image: "assets/img/project/control-systems.svg",
+      tools: ["Nonlinear Control", "Quadcopter", "MATLAB"],
+      summary: "Nonlinear feedback-linearization controller for a quadcopter system.",
+      detail: "Focuses on transforming nonlinear dynamics into a controllable linearized form for tracking.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/Control-Projects/tree/main/03%20-%20Feedback%20Linearization%20Control%20of%20a%20Quadcopter" }]
+    },
+    {
+      title: "LMI-Based Linear, LPV and PWA H-Infinity Control",
+      category: "Control",
+      image: "assets/img/project/control-systems.svg",
+      tools: ["LMI", "LPV", "PWA", "H-infinity"],
+      summary: "LMI-based H-infinity control formulations for linear, LPV, and piecewise affine systems.",
+      detail: "Connected to research on robust control of nonlinear systems through tractable affine bounds.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/Control-Projects/tree/main/04%20-%20LMI%20based%20Linear%2C%20LPV%20and%20Piecewise%20Affine%20H-infinity%20Control" }]
+    },
+    {
+      title: "Hanus Form of a PI Controller",
+      category: "Control",
+      image: "assets/img/project/control-systems.svg",
+      tools: ["PI Control", "Anti-Windup", "MATLAB"],
+      summary: "Implementation study of the Hanus form for PI control structures.",
+      detail: "A compact controller-design project from the broader control systems repository.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/Control-Projects/tree/main/05%20-%20Hanus%20form%20of%20a%20PI%20Controller" }]
+    },
+    {
+      title: "Mesh-Based Affine Abstraction",
+      category: "Control",
+      image: "assets/img/project/control-systems.svg",
+      tools: ["Affine Abstraction", "Nonlinear Systems", "MATLAB"],
+      summary: "Mesh-based affine abstraction workflow for nonlinear system analysis.",
+      detail: "Builds simplified affine representations over a mesh to support analysis and control design.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/Control-Projects/tree/main/06%20-%20Mesh-Based%20Affine%20Abstraction" }]
+    },
+    {
+      title: "Lipschitz Mesh-Based Affine Abstraction",
+      category: "Control",
+      image: "assets/img/project/control-systems.svg",
+      tools: ["Lipschitz Bounds", "Affine Abstraction", "MATLAB"],
+      summary: "Affine abstraction method using Lipschitz-continuous bounds.",
+      detail: "Extends mesh-based abstraction with continuity-aware bounding for nonlinear models.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/Control-Projects/tree/main/07%20-%20Lipschitz%20Continuous%20Mesh-Based%20Affine%20Abstraction" }]
+    },
+    {
+      title: "Invariant Sets",
+      category: "Control",
+      image: "assets/img/project/control-systems.svg",
+      tools: ["Invariant Sets", "Control Theory", "MATLAB"],
+      summary: "Computation and analysis of invariant sets for control-system constraints.",
+      detail: "A theory-focused control project for understanding state-space constraint behavior.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/Control-Projects/tree/main/08%20-%20Invariant%20Sets" }]
+    },
+    {
+      title: "Iterative Guidance Mode",
       category: "Guidance",
       image: "assets/img/project/slv-guidance.svg",
-      tools: ["MATLAB", "Launch Vehicle Guidance", "Orbital Mechanics"],
-      summary: "Guidance algorithms and astrodynamics utilities for satellite launch vehicle studies.",
-      detail: "Includes Iterative Guidance Mode, Kepler Propagator, Lambert Problem, Optimal Guidance, and Powered Explicit Guidance.",
-      links: [{ label: "Repository", url: "https://github.com/fawadkhanf3/SLV-Guidance" }]
+      tools: ["SLV Guidance", "MATLAB", "Trajectory"],
+      summary: "Iterative guidance mode for satellite launch vehicle trajectory shaping.",
+      detail: "A guidance project connected to launch vehicle ascent and terminal targeting.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/SLV-Guidance/tree/main/Iterative%20Guidance%20Mode" }]
     },
     {
-      title: "Navigation Projects",
+      title: "Kepler Propagator",
+      category: "Guidance",
+      image: "assets/img/project/slv-guidance.svg",
+      tools: ["Orbital Mechanics", "Kepler", "MATLAB"],
+      summary: "Keplerian orbit propagation utility for astrodynamics workflows.",
+      detail: "Supports trajectory and orbit-analysis tasks used around SLV guidance problems.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/SLV-Guidance/tree/main/Kepler%20Propagator" }]
+    },
+    {
+      title: "Lambert Problem",
+      category: "Guidance",
+      image: "assets/img/project/slv-guidance.svg",
+      tools: ["Lambert Solver", "Orbital Transfer", "MATLAB"],
+      summary: "Solver project for Lambert transfer problems in orbital mechanics.",
+      detail: "Useful for connecting boundary-position constraints through orbital transfer arcs.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/SLV-Guidance/tree/main/Lambert%20Problem" }]
+    },
+    {
+      title: "Optimal Guidance",
+      category: "Guidance",
+      image: "assets/img/project/slv-guidance.svg",
+      tools: ["Optimal Guidance", "Trajectory Optimization", "MATLAB"],
+      summary: "Optimal guidance project for satellite launch vehicle applications.",
+      detail: "Frames guidance as an optimization-driven trajectory and steering problem.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/SLV-Guidance/tree/main/Optimal%20Guidance" }]
+    },
+    {
+      title: "Powered Explicit Guidance",
+      category: "Guidance",
+      image: "assets/img/project/slv-guidance.svg",
+      tools: ["PEG", "Launch Vehicle", "MATLAB"],
+      summary: "Powered Explicit Guidance implementation for launch vehicle ascent.",
+      detail: "A classic launch vehicle guidance approach represented as a focused project module.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/SLV-Guidance/tree/main/Powered%20Explicit%20Guidance" }]
+    },
+    {
+      title: "EKF Navigation",
       category: "Navigation",
       image: "assets/img/project/navigation.svg",
-      tools: ["EKF", "CKF", "Simulink", "Flight Vehicles"],
-      summary: "Navigation filtering projects for flight vehicles, including linear and nonlinear state-estimate formulations.",
-      detail: "Includes EKF Navigation, CKF Navigation with linear Xhat, CKF Navigation with nonlinear Xhat, and EKF Navigation for a Quadrotor in Simulink.",
-      links: [{ label: "Repository", url: "https://github.com/fawadkhanf3/Navigation-Projects" }]
+      tools: ["EKF", "Navigation", "MATLAB"],
+      summary: "Extended Kalman Filter navigation project for flight vehicle state estimation.",
+      detail: "Implements nonlinear navigation filtering using the EKF framework.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/Navigation-Projects/tree/main/01%20-%20EKF%20Navigation" }]
     },
     {
-      title: "State Estimation & Filtering",
+      title: "CKF Navigation with Linear Xhat",
+      category: "Navigation",
+      image: "assets/img/project/navigation.svg",
+      tools: ["CKF", "Linear Estimate", "MATLAB"],
+      summary: "Cubature Kalman Filter navigation with a linear state-estimate formulation.",
+      detail: "Compares CKF-style nonlinear filtering behavior under a linear estimate model.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/Navigation-Projects/tree/main/02%20-%20CKF%20Navigation%20(Linear%20Xhat)" }]
+    },
+    {
+      title: "CKF Navigation with Nonlinear Xhat",
+      category: "Navigation",
+      image: "assets/img/project/navigation.svg",
+      tools: ["CKF", "Nonlinear Estimate", "MATLAB"],
+      summary: "Cubature Kalman Filter navigation using nonlinear state-estimate dynamics.",
+      detail: "A navigation filtering variant for nonlinear state propagation and measurement handling.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/Navigation-Projects/tree/main/03%20-%20CKF%20Navigation%20(Nonlinear%20Xhat)" }]
+    },
+    {
+      title: "EKF Navigation for a Quadrotor",
+      category: "Navigation",
+      image: "assets/img/project/navigation.svg",
+      tools: ["EKF", "Quadrotor", "Simulink"],
+      summary: "Simulink-based EKF navigation project for a quadrotor system.",
+      detail: "Connects navigation filtering with a multirotor vehicle model and simulation workflow.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/Navigation-Projects/tree/main/04%20-%20EKF%20Navigation%20for%20a%20Quadrotor%20(Simulink)" }]
+    },
+    {
+      title: "Filtering & Estimation",
       category: "Estimation",
       image: "assets/img/project/state-estimation.svg",
-      tools: ["Filtering", "Set-Valued Estimation", "Fault Detection", "Interval Observers"],
-      summary: "A collection of state estimation, filtering, fault detection, and observer projects.",
-      detail: "Includes Filtering & Estimation, Set-Valued State Estimation, Fault Detection, and Interval Observers.",
-      links: [{ label: "Repository", url: "https://github.com/fawadkhanf3/State-Estimation-and-Filtering" }]
+      tools: ["Filtering", "Estimation", "MATLAB"],
+      summary: "Foundational filtering and estimation project module.",
+      detail: "A focused project for estimation algorithms and filter behavior.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/State-Estimation-and-Filtering/tree/main/01%20-%20Filtering%20%26%20Estimation" }]
     },
     {
-      title: "Optimal Control & Optimization",
+      title: "Set-Valued State Estimation",
+      category: "Estimation",
+      image: "assets/img/project/state-estimation.svg",
+      tools: ["Set-Valued Estimation", "Zonotopes", "MATLAB"],
+      summary: "Set-valued estimation project for bounded uncertainty representations.",
+      detail: "Aligned with constrained-zonotope state-estimation research for GNSS-INS integration.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/State-Estimation-and-Filtering/tree/main/02%20-%20Set-Valued%20State%20Estimation" }]
+    },
+    {
+      title: "Fault Detection",
+      category: "Estimation",
+      image: "assets/img/project/state-estimation.svg",
+      tools: ["Fault Detection", "Signal Analysis", "MATLAB"],
+      summary: "Fault detection project for identifying anomalous system behavior.",
+      detail: "Connects estimation and signal-analysis ideas to actuator fault detection work.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/State-Estimation-and-Filtering/tree/main/03%20-%20Fault%20Detection" }]
+    },
+    {
+      title: "Interval Observers",
+      category: "Estimation",
+      image: "assets/img/project/state-estimation.svg",
+      tools: ["Interval Observers", "Uncertainty", "MATLAB"],
+      summary: "Observer design project using interval-based state bounds.",
+      detail: "A bounded-estimation project for systems with uncertainty and incomplete information.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/State-Estimation-and-Filtering/tree/main/04%20-%20Interval%20Observers" }]
+    },
+    {
+      title: "Collocation",
       category: "Optimization",
       image: "assets/img/project/optimization.svg",
-      tools: ["Collocation", "LGL Pseudospectral", "PSO", "Optimal Control"],
-      summary: "Optimization projects focused on optimal-control transcription and weight selection.",
-      detail: "Includes Collocation, Legendre-Gauss-Lobatto Pseudospectral methods, and Optimal Weight Selection with Particle Swarm Optimization.",
-      links: [{ label: "Repository", url: "https://github.com/fawadkhanf3/Optimization" }]
+      tools: ["Collocation", "Optimal Control", "MATLAB"],
+      summary: "Direct collocation project for optimal-control problem transcription.",
+      detail: "Transforms continuous optimal-control problems into finite-dimensional numerical programs.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/Optimization/tree/main/01%20-%20Collocation" }]
     },
     {
-      title: "Computational Geometry Projects",
+      title: "LGL Pseudospectral Method",
+      category: "Optimization",
+      image: "assets/img/project/optimization.svg",
+      tools: ["LGL", "Pseudospectral", "Optimal Control"],
+      summary: "Legendre-Gauss-Lobatto pseudospectral method project.",
+      detail: "Uses pseudospectral transcription for high-accuracy optimal-control discretization.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/Optimization/tree/main/02%20-%20LGL%20Pseudospectral" }]
+    },
+    {
+      title: "Optimal Weight Selection with PSO",
+      category: "Optimization",
+      image: "assets/img/project/optimization.svg",
+      tools: ["PSO", "Weight Selection", "Optimization"],
+      summary: "Particle Swarm Optimization project for selecting optimal weights.",
+      detail: "Explores metaheuristic tuning for design weights in optimization workflows.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/Optimization/tree/main/03%20-%20Optimal%20Weight%20Selection%20with%20PSO" }]
+    },
+    {
+      title: "Maximum Object Enclosing Rectangle",
       category: "Computational Geometry",
       image: "assets/img/project/computational-geometry.svg",
-      tools: ["Geometry", "Algorithms", "Optimization"],
-      summary: "Computational geometry projects for geometric enclosure and inscribed-shape problems.",
-      detail: "Includes Maximum Object Enclosing Rectangle and Maximum Inscribed Isothetic Rectangle projects.",
-      links: [{ label: "Repository", url: "https://github.com/fawadkhanf3/Computational-Geometry-Projects" }]
+      tools: ["Geometry", "Algorithms", "Rectangle Search"],
+      summary: "Computational geometry project for enclosing objects with a maximum rectangle.",
+      detail: "A geometric algorithm project focused on enclosure under rectangular constraints.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/Computational-Geometry-Projects/tree/main/01%20-%20Maximum%20Object%20Enclosing%20Rectangle" }]
     },
     {
-      title: "Numerical Methods",
-      category: "Numerical Integration",
+      title: "Maximum Inscribed Isothetic Rectangle",
+      category: "Computational Geometry",
+      image: "assets/img/project/computational-geometry.svg",
+      tools: ["Geometry", "Isothetic Rectangle", "Algorithms"],
+      summary: "Computational geometry project for finding a maximum inscribed isothetic rectangle.",
+      detail: "Studies axis-aligned rectangle construction inside a geometric domain.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/Computational-Geometry-Projects/tree/main/02%20-%20Maximum%20Inscribed%20Isothetic%20Rectangle" }]
+    },
+    {
+      title: "Numerical Integration Methods",
+      category: "Numerical Methods",
       image: "assets/img/project/numerical-methods.svg",
-      tools: ["C++", "MATLAB MEX", "RK4", "Dormand-Prince", "Fehlberg"],
-      summary: "Numerical integration implementations and C++/MEX solvers for simulation workflows.",
-      detail: "Includes fixed-step RK4, Heun, ode45-style Fehlberg and Dormand-Prince implementations, and supporting stepper headers.",
-      links: [{ label: "Repository", url: "https://github.com/fawadkhanf3/Numerical-Methods" }]
+      tools: ["C++", "MATLAB MEX", "RK4", "Heun", "Dormand-Prince", "Fehlberg"],
+      summary: "C++ and MATLAB MEX implementations of numerical ODE integration methods.",
+      detail: "Includes fixed-step RK4, Heun, ode45-style Fehlberg and Dormand-Prince solvers, and reusable stepper headers.",
+      links: [{ label: "Code", url: "https://github.com/fawadkhanf3/Numerical-Methods" }]
     }
   ],
   certificates: [

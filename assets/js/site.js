@@ -65,7 +65,9 @@
       .map(
         (entry) => `
           <article class="timeline-item">
-            <img src="${entry.image}" alt="${escapeHtml(entry.school)} logo or campus image">
+            <div class="education-logo" style="--logo-scale:${entry.logoScale || 1}">
+              <img src="${entry.image}" alt="${escapeHtml(entry.school)} logo or campus image">
+            </div>
             <div class="timeline-content">
               <div class="item-head">
                 <div>
@@ -149,8 +151,14 @@
       .join("");
   }
 
-  function renderProjects() {
-    $("#project-list").innerHTML = data.projects
+  function renderProjects(active = "All") {
+    const categories = ["All", ...new Set(data.projects.map((project) => project.category))];
+    $("#project-filters").innerHTML = categories
+      .map((category) => `<button class="${category === active ? "active" : ""}" type="button" data-filter="${escapeHtml(category)}">${escapeHtml(category)}</button>`)
+      .join("");
+
+    const projects = active === "All" ? data.projects : data.projects.filter((project) => project.category === active);
+    $("#project-list").innerHTML = projects
       .map(
         (project) => `
           <article class="project-card">
@@ -241,6 +249,11 @@
     $("#certificate-filters").addEventListener("click", (event) => {
       const button = event.target.closest("button");
       if (button) renderCertificates(button.dataset.filter);
+    });
+
+    $("#project-filters").addEventListener("click", (event) => {
+      const button = event.target.closest("button");
+      if (button) renderProjects(button.dataset.filter);
     });
   }
 
