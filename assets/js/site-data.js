@@ -44,7 +44,7 @@ window.portfolioData = {
       school: "Beihang University",
       url: "https://is.buaa.edu.cn/en/",
       degree: "Master of Engineering in Aerospace Science and Technology",
-      period: "September 2023 - July 2025",
+      period: "September 2023 - January 2026",
       metric: "CGPA: 3.87/4.0",
       image: "assets/img/education/BUAA.jpg",
       logoScale: 1.0,
