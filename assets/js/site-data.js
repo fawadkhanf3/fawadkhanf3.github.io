@@ -51,7 +51,7 @@ window.portfolioData = {
       details: [
         { label: "Research", items: ["Intelligent Control of Aerospace Vehicles"] },
         { label: "Thesis", items: ["Adaptive Control for Powered Landing of Reusable Launch Vehicles"] },
-        { label: "Achievements", items: ["Second Prize for Excellent Study", "Chinese Government Scholarship", "Dean's List of Honors"] },
+        { label: "Achievements", items: ["Outstanding International Graduate for the Year 2026","Second Prize for Excellent Study", "Chinese Government Scholarship", "Dean's List of Honors"] },
         {
           label: "Projects",
           items: [
